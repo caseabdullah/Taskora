@@ -24,7 +24,6 @@ const Completed = () => {
 
     try{
       const response=await api.delete("/dashboard/deleteTask/"+Taskid)
-      console.log(response.data);
       settask(response.data.tasks)
       setstats(response.data.stats)
     }
@@ -85,7 +84,6 @@ const pendingTask = async (taskId) => {
     try{
       setloading(true)
       const resposne=await api.get("/dashboard");
-      console.log(resposne.data.message);
       await getTasks()
     }
     catch (err) {

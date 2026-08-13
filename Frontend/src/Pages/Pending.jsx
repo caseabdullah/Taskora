@@ -37,7 +37,6 @@ const Pending = () => {
 
     try{
       const response=await api.delete("/dashboard/deleteTask/"+Taskid)
-      console.log(response.data);
       settask(response.data.tasks)
       setstats(response.data.stats)
     }
@@ -89,7 +88,6 @@ const Pending = () => {
 
   try{
     const response=await api.get("/dashboard/getTask/?status=pending");
-    console.log(response.data);
     settask(response.data.tasks)
     setstats(response.data.stats)
   }

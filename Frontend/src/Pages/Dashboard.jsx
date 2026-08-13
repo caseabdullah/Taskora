@@ -41,7 +41,6 @@ const deleteTask =async(Taskid)=>{
 
     try{
       const response=await api.delete("/dashboard/deleteTask/"+Taskid)
-      console.log(response.data);
       settask(response.data.tasks)
       setstats(response.data.stats)
     }
@@ -55,7 +54,6 @@ const getTasks = async()=>{
 
   try{
     const response=await api.get("/dashboard/getTask/?status=pending&due=active");
-    console.log(response.data.stats);
     setusername(response.data.username);
     setstats(response.data.stats);
     settask(response.data.tasks)

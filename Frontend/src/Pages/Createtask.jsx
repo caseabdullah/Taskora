@@ -34,10 +34,8 @@ const Createtask = () => {
 
       try{
         const response=await api.post("/dashboard/createTask",data);
-        console.log(response.data.tasks);
         settask(response.data.tasks)
         setstats(response.data.stats)
-        console.log(response.data.stats);
         navigate(-1);
       }
       catch(err){
