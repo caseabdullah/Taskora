@@ -9,11 +9,12 @@ const app=express();
 app.use(express.json());
 
 app.use(cors({
-    origin: "http://localhost:5173", // Your React frontend
+    origin: "https://taskora-todo.netlify.app/", // Your React frontend
     credentials: true
 }));
 
 app.use(cookieParser());
+
 
 app.use('/auth',authentication);
 app.use('/dashboard',dashboard);
