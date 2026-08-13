@@ -9,7 +9,7 @@ const app=express();
 app.use(express.json());
 
 app.use(cors({
-    origin: "https://taskora-todo.netlify.app/", // Your React frontend
+    origin: "https://taskora-todo.netlify.app", // Your React frontend
     credentials: true
 }));
 

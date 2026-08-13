@@ -122,7 +122,7 @@ const Login = () => {
             <button
             type="button"
             onClick={() => setshowPassword(!showPassword)}
-            className="absolute text-[#E0FF22] right-3 bottom-[3%] -translate-y-1/2"
+            className="absolute cursor-pointer text-[#E0FF22] right-3 bottom-[3%] -translate-y-1/2"
             >
             {showPassword ? <EyeOff size={25}/>:<Eye size={25} />}
             </button>
