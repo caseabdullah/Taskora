@@ -3,6 +3,9 @@ const app=require('./src/app');
 const PORT=process.env.PORT || 3000;
 const connect_db=require('./src/db/db')
 
+app.get('/',(req,res)=>{
+    res.send('Server is Running.....')
+})
 
 connect_db();
 app.listen(PORT,()=>{
