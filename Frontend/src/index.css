@@ -1,0 +1,289 @@
+@import "tailwindcss";
+@layer base{
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+  scroll-behavior: smooth;
+}
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #050505;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #1A1A1A inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(84%) sepia(64%) saturate(1000%) hue-rotate(15deg) brightness(1.1);
+  cursor: pointer;
+  scale: 1.3;
+}
+
+@import "tailwindcss";
+@layer base{
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+  scroll-behavior: smooth;
+}
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #050505;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #1A1A1A inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(84%) sepia(64%) saturate(1000%) hue-rotate(15deg) brightness(1.1);
+  cursor: pointer;
+  scale: 1.3;
+}
+
+.taskora-calendar-sm {
+  --rdp-day-width: 32px;
+  --rdp-day-height: 32px;
+  --rdp-cell-size: 32px;
+}
+
+.taskora-calendar-sm .rdp-month_grid {
+  border-spacing: 2px;
+}
+
+.taskora-calendar-sm .rdp-weekday {
+  width: 32px;
+  height: 24px;
+  font-size: 10px;
+}
+
+.taskora-calendar-sm .rdp-day {
+  width: 32px;
+  height: 32px;
+}
+
+.taskora-calendar-sm .rdp-day_button {
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.taskora-calendar-sm .rdp-caption_label {
+  font-size: 14px;
+}
+
+.taskora-calendar-sm .rdp-button_previous,
+.taskora-calendar-sm .rdp-button_next {
+  width: 26px;
+  height: 26px;
+}
+.taskora-calendar {
+  --rdp-accent-color: #E0FF22;
+  --rdp-accent-background-color: rgba(224, 255, 34, 0.12);
+  --rdp-day-width: 40px;
+  --rdp-day-height: 40px;
+  --rdp-cell-size: 40px;
+  --rdp-gap: 6px;
+  color: #ffffff;
+  padding: 4px;
+}
+
+/* Overall month container */
+.taskora-calendar .rdp-month {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Header row: month name + nav arrows */
+.taskora-calendar .rdp-month_caption,
+.taskora-calendar .rdp-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 4px 12px 4px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #2D2D2D;
+}
+
+.taskora-calendar .rdp-caption_label {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Nav buttons */
+.taskora-calendar .rdp-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.taskora-calendar .rdp-button_previous,
+.taskora-calendar .rdp-button_next {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  border-radius: 8px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.taskora-calendar .rdp-button_previous:hover,
+.taskora-calendar .rdp-button_next:hover {
+  background: #27272a;
+  color: #E0FF22;
+}
+
+/* Grid: weekday row + day rows */
+.taskora-calendar .rdp-month_grid {
+  border-collapse: separate;
+  border-spacing: 4px;
+  width: 100%;
+}
+
+.taskora-calendar .rdp-weekdays {
+  margin-bottom: 4px;
+}
+
+.taskora-calendar .rdp-weekday {
+  color: #71717a;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 40px;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Each day cell */
+.taskora-calendar .rdp-day {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+}
+
+/* The actual clickable day button */
+.taskora-calendar .rdp-day_button {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #d4d4d8;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+}
+
+.taskora-calendar .rdp-day_button:hover:not(.rdp-disabled) {
+  background: rgba(224, 255, 34, 0.1);
+  color: #E0FF22;
+}
+
+.taskora-calendar .rdp-day_button:active:not(.rdp-disabled) {
+  transform: scale(0.94);
+}
+
+/* Selected day */
+.taskora-calendar .rdp-selected .rdp-day_button {
+  background: #E0FF22 !important;
+  color: #000000 !important;
+  font-weight: 700;
+}
+
+/* Today */
+.taskora-calendar .rdp-today:not(.rdp-outside) .rdp-day_button {
+  color: #E0FF22;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px #E0FF22;
+}
+
+.taskora-calendar .rdp-today.rdp-selected .rdp-day_button {
+  box-shadow: none;
+}
+
+/* Disabled dates */
+.taskora-calendar .rdp-disabled .rdp-day_button {
+  color: #3f3f46;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Outside month dates */
+.taskora-calendar .rdp-outside .rdp-day_button {
+  color: #3f3f46;
+}
+
+.taskora-calendar-sm {
+  --rdp-day-width: 32px;
+  --rdp-day-height: 32px;
+  --rdp-cell-size: 32px;
+}
+
+.taskora-calendar-sm .rdp-month_grid {
+  border-spacing: 2px;
+}
+
+.taskora-calendar-sm .rdp-weekday {
+  width: 32px;
+  height: 24px;
+  font-size: 10px;
+}
+
+.taskora-calendar-sm .rdp-day {
+  width: 32px;
+  height: 32px;
+}
+
+.taskora-calendar-sm .rdp-day_button {
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.taskora-calendar-sm .rdp-caption_label {
+  font-size: 14px;
+}
+
+.taskora-calendar-sm .rdp-button_previous,
+.taskora-calendar-sm .rdp-button_next {
+  width: 26px;
+  height: 26px;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slide-in {
+  animation: slide-in 0.5s ease-out forwards;
+}

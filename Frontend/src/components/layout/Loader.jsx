@@ -1,0 +1,50 @@
+import React from "react";
+import "./loader.css";
+
+const Loader = () => {
+  return (
+    <div className="relative">
+      <div className="boxes">
+
+        <div className="box box-1">
+          <div className="face face-front" />
+          <div className="face face-right" />
+          <div className="face face-top" />
+          <div className="face face-back" />
+          <div className="face face-left" />
+          <div className="face face-bottom" />
+        </div>
+
+        <div className="box box-2">
+          <div className="face face-front" />
+          <div className="face face-right" />
+          <div className="face face-top" />
+          <div className="face face-back" />
+          <div className="face face-left" />
+          <div className="face face-bottom" />
+        </div>
+
+        <div className="box box-3">
+          <div className="face face-front" />
+          <div className="face face-right" />
+          <div className="face face-top" />
+          <div className="face face-back" />
+          <div className="face face-left" />
+          <div className="face face-bottom" />
+        </div>
+
+        <div className="box box-4">
+          <div className="face face-front" />
+          <div className="face face-right" />
+          <div className="face face-top" />
+          <div className="face face-back" />
+          <div className="face face-left" />
+          <div className="face face-bottom" />
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default Loader;
