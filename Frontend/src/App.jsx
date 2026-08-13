@@ -6,7 +6,7 @@ import Login from './Pages/Login'
 import Dashboard from './Pages/Dashboard'
 import Layout from './Pages/Layout'
 import Pending from './Pages/Pending'
-import Completed from './Pages/completed'
+import Completed from './Pages/Completed'
 import Createtask from './Pages/Createtask'
 
 const App = () => {
