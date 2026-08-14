@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="flex flex-col items-start gap-4 sm:gap-5 md:gap-4 lg:gap-5 text-white max-w-2xl">
 
           {/* Badge */}
-          <div className="flex gap-1 sm:gap-2 items-center font-semibold text-sm sm:text-xs md:text-sm lg:text-base bg-[#e0ff22]/30 rounded-3xl px-2 pr-4 py-1 text-[#e0ff22]">
+          <div className="flex gap-1 sm:gap-2 items-center font-semibold text-sm sm:text-xs md:text-sm lg:text-base bg-[#e0ff22]/30 rounded-3xl p-2 pr-4  text-[#e0ff22]">
             <Dot size={26} strokeWidth={10}/>
             Stay Focused & Achieve more
           </div>
