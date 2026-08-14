@@ -63,7 +63,7 @@ const Nav = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className='fixed inset-0 h-screen z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm'>
-          <div className="fixed top-0 h-screen pb-20 w-60 right-0 bg-[#0C0C12] border-l border-[#1F1F1F] px-5 py-6 flex flex-col justify-between md:hidden">
+          <div className="fixed top-0 h-screen pb-22 w-60 right-0 bg-[#0C0C12] border-l border-[#1F1F1F] px-5 py-6 flex flex-col justify-between md:hidden">
           <div className='flex flex-col gap-3'>
             <div className='flex justify-end'>
             <div 
