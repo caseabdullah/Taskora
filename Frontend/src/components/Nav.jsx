@@ -68,13 +68,18 @@ const Nav = () => {
             <div className='flex justify-end'>
             <div 
             className='transition-colors duration-200 text-[#E0FF22]'
-            onClick={()=> setMenuOpen(false)}>
+            onClick={()=> {setMenuOpen(false)
+              document.body.style.overflow = ''
+            }}>
               <X size={24} />
             </div>
           </div>
           <a 
             href="#features"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false)
+              document.body.style.overflow = ''
+            }}
             className="text-[#8E8E93] transition-colors duration-200 items-center flex gap-3 text-lg font-semibold hover:text-white"
           >
            <Sparkles size={18}/> Features
@@ -82,7 +87,9 @@ const Nav = () => {
 
           <a 
             href="#about"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {setMenuOpen(false)
+              document.body.style.overflow = ''
+            }}
             className="text-[#8E8E93] transition-colors duration-200 items-center flex gap-3 text-lg font-semibold hover:text-white"
           >
            <Info size={18}/> About Us
@@ -90,7 +97,9 @@ const Nav = () => {
 
           <a 
             href="#how-it-works"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {setMenuOpen(false)
+              document.body.style.overflow = ''
+            }}
             className="text-[#8E8E93] transition-colors duration-200 items-center flex gap-3 text-lg font-semibold hover:text-white"
           >
            <SquareChartGantt size={18}/> How It Works
@@ -99,7 +108,9 @@ const Nav = () => {
 
           <Link
             to="login"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {setMenuOpen(false)
+              document.body.style.overflow = ''
+            }}
             className="text-center font-semibold text-[#E0FF22] border border-[#E0FF22] py-2.5 rounded-lg hover:bg-[#E0FF22] hover:text-black transition-colors duration-300"
           >
             Sign in
