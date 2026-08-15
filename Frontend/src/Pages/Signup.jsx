@@ -87,9 +87,11 @@ const Signup = () => {
             <button
               type="button"
               onClick={() => navigate("/")}
-              className="shrink-0 bg-[#18181B] hover:bg-[#131313] transition border-2 border-[#222222] cursor-pointer duration-300 p-2 rounded-xl"
+              className="shrink-0 bg-[#18181B] hover:bg-[#131313] transition border-2 border-[#222222] cursor-pointer duration-300 sm:p-1 sm:ml-1 p-2 rounded-xl"
             >
-              <X size={22} color="#8E8E93" />
+              <X
+              color="#8E8E93"
+              className="w-5 h-5 sm:w-6.25 sm:h-6.25"/>
             </button>
           </div>
 

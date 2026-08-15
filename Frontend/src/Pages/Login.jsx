@@ -78,8 +78,10 @@ const Login = () => {
           onClick={()=>{
             navigate("/")
           }}
-            className="bg-[#18181B] hover:bg-[#131313]  transition border-2 border-[#222222] cursor-pointer duration-300 p-2 rounded-xl inline-flex">
-              <X size={25} color="#8E8E93"/>
+            className="bg-[#18181B] hover:bg-[#131313]  transition border-2 border-[#222222] cursor-pointer duration-300 sm:ml-1 p-2 sm:p-1 rounded-xl inline-flex">
+              <X
+              color="#8E8E93"
+              className="w-5 h-5 sm:w-6.25 sm:h-6.25"/>
           </div>
         </div>
 
