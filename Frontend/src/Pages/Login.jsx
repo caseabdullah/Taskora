@@ -64,7 +64,7 @@ const Login = () => {
 
   return (
     <div 
-    className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
+    className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm p-4 overflow-y-auto">
       <div className="relative register bg-[#121212] w-130 rounded-3xl shadow-2xl px-10 py-5">
         {loading && (
           <div className="absolute inset-0 rounded-3xl z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
