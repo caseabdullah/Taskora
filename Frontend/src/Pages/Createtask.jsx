@@ -46,7 +46,7 @@ const Createtask = () => {
 
   return (
     <div 
-    className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
+    className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm p-4">
       <div className="relative register bg-[#121212] w-130 rounded-3xl shadow-2xl px-10 pt-6 pb-10">
         {loading && (
               <div className="fixed inset-0 rounded-3xl z-50 flex items-center justify-center  bg-black/30 backdrop-blur-sm">
@@ -150,8 +150,8 @@ const Createtask = () => {
         year: "numeric"
       })}
       onClick={() => setopen(!open)}
-      className="w-full border-2 caret-white text-white bg-[#1A1A1A] border-[#2D2D2D] rounded-xl px-4 py-3 outline-none focus:border-[#E0FF22] transition-colors duration-300 cursor-pointer"
-    /> <CalendarDays color="#E0FF22"  className=" absolute top-3 right-3 cursor-pointer" onClick={() => setopen(!open)}/>
+      className="w-full border-2 caret-white text-white bg-[#1A1A1A] border-[#2D2D2D] rounded-xl px-4 py-3 outline-none focus:border-[#E0FF22] transition-colors duration-300 cursor-pointer"/>
+       <CalendarDays color="#E0FF22"  className=" absolute top-3 right-3 sm:right-0 cursor-pointer" onClick={() => setopen(!open)}/>
 
     {open && (
       <div className="absolute z-50 mt-2 left-120 -top-80 bg-[#111111] border-2 border-[#2D2D2D] rounded-xl p-3 shadow-2xl">
