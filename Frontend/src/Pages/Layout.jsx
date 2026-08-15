@@ -1,35 +1,43 @@
-import React, { useState } from 'react'
-import Sidebar from '../components/layout/Sidebar'
-import Top from '../components/layout/Top'
-import { Outlet } from 'react-router-dom'
+import React, { useState } from "react";
+import Sidebar from "../components/layout/Sidebar";
+import Top from "../components/layout/Top";
+import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   const [username, setusername] = useState();
-  const [task, settask] = useState([])
-  const [stats, setstats] = useState({})
-
+  const [task, settask] = useState([]);
+  const [stats, setstats] = useState({});
+  const [sidebarOpen, setsidebarOpen] = useState(false);
 
   return (
-    <div>
-        <div>
-            <Sidebar />
-        </div>
-        <div className='ml-64'>
-            <Top username={username}/>
-        </div>
-        <div className='ml-64'>
-          <Outlet
+    <div className="min-h-screen bg-[#0a0a0a]">
+
+      <Sidebar
+        sidebarOpen={sidebarOpen}
+        setsidebarOpen={setsidebarOpen}
+      />
+
+      <div className="ml-0 lg:ml-64">
+
+        <Top
+          username={username}
+          setsidebarOpen={setsidebarOpen}
+        />
+
+        <Outlet
           context={{
             setusername,
             task,
             settask,
             stats,
-            setstats
+            setstats,
           }}
-/>
-        </div>
-    </div>
-  )
-}
+        />
 
-export default Layout
+      </div>
+
+    </div>
+  );
+};
+
+export default Layout;
